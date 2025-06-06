@@ -1,0 +1,45 @@
+/* shared.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    color: #333;
+  }
+  
+  .auth-container {
+    max-width: 420px;
+    margin: 6rem auto;
+    padding: 2rem;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #d63384;
+  }
+  
+  .btn-primary {
+    background-color: #d63384;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #c22575;
+  }
+  
+  .form-control {
+    border-radius: 10px;
+  }
+  
+  .form-text a {
+    color: #d63384;
+    text-decoration: none;
+  }
+  
+  .form-text a:hover {
+    text-decoration: underline;
+  }

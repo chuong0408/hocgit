@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Order Success | Thank You!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    body { background: #f7fafc; font-family: 'Roboto', Arial, sans-serif; }
+    .success-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 32px 12px;
+      background: #f7fafc;
+    }
+    .success-box {
+      background: #fff;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 24px #0002;
+      padding: 2.5rem 2.5rem 2rem 2.5rem;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+    }
+    .success-check {
+      font-size: 3.5rem;
+      color: #2dc071;
+      margin-bottom: 1.2rem;
+    }
+    .success-title {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 2.2rem;
+      color: #22223b;
+      margin-bottom: .7rem;
+    }
+    .success-message {
+      font-size: 1.08rem;
+      color: #495057;
+      margin-bottom: 2rem;
+    }
+    .success-actions .btn {
+      min-width: 120px;
+      margin: 0 .5rem;
+    }
+    @media (max-width: 500px) {
+      .success-box { padding: 1.2rem; }
+      .success-title { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="success-container">
+    <div class="success-box">
+      <div class="success-check">
+        <svg width="60" height="60" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="11" stroke="#2dc071" stroke-opacity="0.13" fill="#2dc07122"></circle>
+          <path d="M7 13.2l3 3.2 6-6.6" stroke="#2dc071" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="success-title">Thank You!</div>
+      <div class="success-message">
+        Your order has been placed successfully.<br>
+        We’ve received your information and are processing your order.<br>
+        <span class="text-success d-block mt-2 fw-medium">Order Code: <span id="order-code">#A3FC91</span></span>
+      </div>
+      <div class="success-actions d-flex justify-content-center">
+        <a href="products.html" class="btn btn-outline-primary">Continue Shopping</a>
+        <a href="index.html" class="btn btn-success">Home</a>
+      </div>
+      <div class="text-muted small mt-4">
+        Need help? <a href="contact.html" class="text-decoration-underline">Contact support</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Random order code for demo
+    document.getElementById('order-code').textContent = '#'
+      + Math.random().toString(36).substring(2, 8).toUpperCase();
+  </script>
+</body>
+</html>
